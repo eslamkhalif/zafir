@@ -1,0 +1,139 @@
+body , html{
+    scroll-behavior: smooth;
+}
+.fst{
+    font-size: 50px;
+    font-weight:800;
+color: #B8001F;
+}
+/* ***********************************start nav **************************************** */
+nav li{
+    position: relative;
+}
+nav a::after{ 
+    content: "";
+    width: 0%;
+    height: 3px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #B8001F;
+    transition: width .5s;
+    }
+    nav li:hover a::after{
+       
+        width: 90%;
+    }
+    nav li a{
+        transition: all 1s;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+}
+nav li:hover a{
+
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+    /* nav .active{
+        border-radius: 50%;
+        background-image: linear-gradient(rgba(0,0,255,.1),rgba(0,0,255,.1));
+        color: #B8001F;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+} */
+.nav-img{
+   transition: all .5s;
+   -webkit-transition: all .5s;
+   -moz-transition: all .5s;
+   -ms-transition: all .5s;
+   -o-transition: all .5s;
+}
+
+nav .nav-img:hover{
+    color: blue;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+/* ***********************************end nav **************************************** */
+
+/* ***********************************start home **************************************** */
+.bg-img{
+    background-image:   linear-gradient(rgba(0,0,255,.1),rgba(0,0,255,.1)),url(./../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    
+    background-position: center;
+}
+/* ***********************************end home **************************************** */
+/* ***********************************start about **************************************** */
+
+
+.about-screen i{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.about-screen i:hover{
+
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+}
+.about-screen{
+      width: 30px;
+      top: 20%;
+      bottom: 50%;
+      right: 3%;
+      transform: translate(200%);
+      transition: all .5s ;
+      -webkit-transition: all .5s ;
+      -moz-transition: all .5s ;
+      -ms-transition: all .5s ;
+      -o-transition: all .5s ;
+      -webkit-transform: translate(200%);
+      -moz-transform: translate(200%);
+      -ms-transform: translate(200%);
+      -o-transform: translate(200%);
+}
+.about-img:hover .about-screen{
+    transform: translate(-20%);
+    -webkit-transform: translate(-20%);
+    -moz-transform: translate(-20%);
+    -ms-transform: translate(-20%);
+    -o-transform: translate(-20%);
+}
+.about-img{
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.about-img:hover{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+
+
+
+/* ***********************************end about **************************************** */
